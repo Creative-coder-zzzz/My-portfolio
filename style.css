@@ -702,4 +702,26 @@ footer{
             top: 13%;
             right: -5rem;
         }
+        .about .about-content{
+            position: absolute;
+            padding: 2rem;
+            top: 90rem;
+        }
+        .about .about-img img{
+            width: 113vw;
+            height: 75vw;
+        }
+        .about .about-img{
+            position: relative;
+            top: 15rem;
+        }
+
+        .portfolio .portfolio-container {
+            display: flex;
+            flex-direction: column;
+        }
+       .testimonial-container .testimonial-wrapper .testimonial-box{
+        height: 55vh;
+       }
+    
 }
