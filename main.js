@@ -1,3 +1,19 @@
+//toggle
+let butn = document.querySelector("#menu-icon");
+let swt = "yes";
+console.log(butn);
+butn.onclick =() =>{
+  if(swt==="yes"){
+    document.querySelector(".dropdown").style.display ="flex";
+    swt = "no";
+  }
+  else{
+    document.querySelector(".dropdown").style.display ="none";
+    swt = "yes";
+  }
+};
+
+
 //menu icon navbar
 
 let sections = document.querySelectorAll('section');
