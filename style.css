@@ -15,7 +15,11 @@
     --white-color: #fdfdfd;
     --shadow-color:rgba(0,0,0, .3);
 }
-
+.darkmode{
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --shadow-color:rgba(0,0,0, .7);
+}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -191,6 +195,24 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: professionRotate 13s ease-out infinite;
+}
+@keyframes professionRotate {
+    0%,20%{
+        transform: rotate(0deg);
+    }
+    25%,45%{
+        transform: rotate(-90deg);
+    }
+    50%,70%{
+        transform: rotate(-180deg);
+    }
+    75%,95%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 .home .profession-box .profession{
     position: absolute;
@@ -358,6 +380,8 @@ span{
 }
 .portfolio-box img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: .3s ease;
 }
 .portfolio-box:hover img{
@@ -720,10 +744,16 @@ footer{
             display: flex;
             flex-direction: column;
         }
+        .portfolio-box img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .portfolio-container .portfolio-box{
+            width: 52vh;
+        }
        .testimonial-container .testimonial-wrapper .testimonial-box{
         height: 55vh;
        }
-       .testimonial-container .testimonial-wrapper{
-        overflow-y: scroll;
-       }
+    
 }
